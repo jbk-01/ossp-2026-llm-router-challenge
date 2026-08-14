@@ -20,7 +20,7 @@ try:
 except ImportError:  # pragma: no cover - exercised by the CLI error path
     np = None
 
-import hash_regex
+from ossp_router import hash_regex
 from ossp_router.protocol import (
     MODEL_IDS,
     TIERS,
