@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "challenge_id": "ossp-2026-llm-router-challenge",
+  "repository_url": "https://github.com/jbk-01/ossp-2026-llm-router-challenge",
+  "commit_sha": "7eb1297c796a14985b789eb6a2fd01c08be4ad98",
+  "image_digest": "docker.io/jbk010302/ossp-router@sha256:c5c297260519482695c031b6be49e4f84efe34fbefefd922a0db44897fede252",
+  "primary_license": "Apache-2.0"
+}
