@@ -62,8 +62,8 @@ for t in ['fast', 'balanced', 'premium']:
 ### 기대 출력
 
 ```
-final 0.689630681818
-fast 0.6559 1.182 True
+final 0.688380681818
+fast 0.6528 1.147 True
 balanced 0.6903 1.843 True
 premium 0.7338 3.711 True
 ```
@@ -76,14 +76,14 @@ premium 0.7338 3.711 True
 | prompt-heuristic | 0.655341 | 2.102 |
 | feature-budget | 0.643011 | 2.102 |
 | hash-regex (저장소 제공) | 0.695369 | 3.985 |
-| 본 제출 | 0.689630 | 3.711 |
+| 본 제출 | 0.688380 | 3.711 |
 | 오라클 (도달 불가 상한) | 약 0.784 | - |
 
-저장소 제공 hash-regex보다 최종 점수가 0.0057 낮은 대신 Premium 예산 여유를
+저장소 제공 hash-regex보다 최종 점수가 0.0070 낮은 대신 Premium 예산 여유를
 2.8%에서 7.2%로 늘렸습니다. baselines/README.md에 따르면 hash-regex는
 채점용 평가셋에서 비용 비율이 약 4.2로 나타나 Premium이 0점 처리된 전례가
 있습니다. 등급 하나가 0점이 되면 가중치 0.3에 해당하는 약 0.22를 잃으므로,
-점수 0.0057을 지불해 그 위험을 줄이는 선택을 했습니다.
+점수 0.0070을 지불해 그 위험을 줄이는 선택을 했습니다.
 
 ## 컨테이너로 확인하려면
 
@@ -95,7 +95,7 @@ docker run --privileged --rm tonistiigi/binfmt --install arm64
 docker run --rm \
   -v "$PWD/data/materialized/dev:/challenge/input:ro" \
   -v "$PWD/build/container-out:/challenge/output" \
-  docker.io/jbk010302/ossp-router@sha256:f4f398b5db829dd3a04ff00260bd466d19594e1f070445e1b30d4c6bcb42b4cc \
+  docker.io/jbk010302/ossp-router@sha256:f0daa40c0e6b39f31ec963be5199b27e6b3762b9a1df3612124aec9713c1c06c \
   --input /challenge/input/inputs.json --tier fast \
   --output /challenge/output/submission.json
 ```
@@ -108,5 +108,5 @@ Apple Silicon 환경 참고값은 docs/runtime-benchmark.md에 있으며,
 ## 제출 정보
 
 - 저장소: https://github.com/jbk-01/ossp-2026-llm-router-challenge
-- 코드 커밋: fa91335aee208b78c6080f97962d7302d04ea0b4
-- 이미지: docker.io/jbk010302/ossp-router@sha256:f4f398b5db829dd3a04ff00260bd466d19594e1f070445e1b30d4c6bcb42b4cc
+- 코드 커밋: a1c2781f688b77e27a229b590d08957c82127293
+- 이미지: docker.io/jbk010302/ossp-router@sha256:f0daa40c0e6b39f31ec963be5199b27e6b3762b9a1df3612124aec9713c1c06c
