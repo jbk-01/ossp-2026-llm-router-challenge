@@ -2226,7 +2226,7 @@
   }
  },
  "tier_safety_ratios": {
-  "fast": 0.9,
+  "fast": 0.88,
   "balanced": 0.9,
   "premium": 0.94
  },
