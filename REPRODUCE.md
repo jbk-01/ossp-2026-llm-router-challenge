@@ -63,9 +63,9 @@ for t in ['fast', 'balanced', 'premium']:
 
 ```
 final 0.705568181818
-fast 0.6710 1.062 True
-balanced 0.7017 1.696 True
-premium 0.7452 2.910 True
+fast 0.6610 1.062 True
+balanced 0.7173 1.696 True
+premium 0.7531 2.910 True
 ```
 
 ## 설계 요약
