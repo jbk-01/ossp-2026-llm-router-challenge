@@ -138,7 +138,7 @@ docker run --privileged --rm tonistiigi/binfmt --install arm64
 docker run --rm \
   -v "$PWD/data/materialized/dev:/challenge/input:ro" \
   -v "$PWD/build/container-out:/challenge/output" \
-  docker.io/jbk010302/ossp-router@sha256:865ba83fbdd7f4513253bba445b29970a4bb4d792d6a54d84f44bdb6c8b493f9 \
+  docker.io/jbk010302/ossp-router@sha256:1671cea998a770989f82427caf0feffb8253c11a6bff2bfa684d65fde939f0c6 \
   --input /challenge/input/inputs.json --tier fast \
   --output /challenge/output/submission.json
 ```
@@ -152,8 +152,8 @@ x86 기준 Train 1,760문항 처리에 4.4초가 걸립니다.
 ## 제출 정보
 
 - 저장소: https://github.com/jbk-01/ossp-2026-llm-router-challenge
-- 코드 커밋: dc701a861606753dd1b5a98161e901ef1078fb07
-- 이미지: docker.io/jbk010302/ossp-router@sha256:865ba83fbdd7f4513253bba445b29970a4bb4d792d6a54d84f44bdb6c8b493f9
+- 코드 커밋: d6aba7a23a94eef5af2d80911d4caddf65225f85
+- 이미지: docker.io/jbk010302/ossp-router@sha256:1671cea998a770989f82427caf0feffb8253c11a6bff2bfa684d65fde939f0c6
 - 기술 제출 정보 검증:
 
 ```bash
