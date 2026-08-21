@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 for infl in 1.0 1.3 1.6 2.0; do
 for s in 0.90 0.94; do
   python3 -c "

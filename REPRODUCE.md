@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # 재현 절차
 
 공개 Dev 880문항에서 제출 라우터의 점수와 예산 비율을 확인하는 방법입니다.

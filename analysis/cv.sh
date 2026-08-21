@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 # 2,640문항을 5폴드로 나눠 학습/평가
 python3 - << 'PYEOF'
 import json

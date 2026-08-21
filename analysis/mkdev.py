@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 import json, pandas as pd
 from decimal import Decimal
 RATE={"ax31-light":(1,4),"ax31":(2.127,8.509),"axk1-think":(6.565,26.26)}

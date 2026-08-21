@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 for p in 0.94 0.85 0.78 0.72; do
   python3 -c "
 import json, math

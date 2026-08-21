@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
 # SPDX-License-Identifier: Apache-2.0
 """Container entry point: bundled hash-regex router."""
 from __future__ import annotations

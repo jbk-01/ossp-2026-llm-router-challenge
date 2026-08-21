@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 import pandas as pd, numpy as np
 df = pd.read_csv("build/train-analysis.csv")
 p = df["prompt"].fillna("")

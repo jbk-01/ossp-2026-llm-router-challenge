@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 import json, pandas as pd
 dv = pd.read_csv("build/dev.csv")
 dv["g"] = dv["score_ax31"] - dv["score_ax31-light"]

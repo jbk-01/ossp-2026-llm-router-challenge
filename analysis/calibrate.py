@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 import json, math, sys
 from pathlib import Path
 sys.path.insert(0, 'src')

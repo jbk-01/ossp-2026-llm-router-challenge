@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 for b in 1.0; do
 echo "=== think 증폭 b=$b ==="
 for k in 0 1 2 3 4; do

@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
+# SPDX-License-Identifier: Apache-2.0
 # 폴드별 학습 (시간 걸림)
 for k in 0 1 2 3 4; do
   echo "=== 폴드 $k 학습 ==="
