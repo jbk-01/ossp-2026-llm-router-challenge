@@ -28,6 +28,7 @@ SPDX-License-Identifier: Apache-2.0
 | `models.py` | Ridge·로지스틱·그래디언트 부스팅 5종의 이득 예측력 비교 |
 | `filter.py` | 예측 점수로 승격 후보를 선별하는 전략 검증 (역효과 확인) |
 | `think.py` | 추론 모델 승격 이득의 예측 가능성 측정 (상관 0.358) |
+| `ml.py` | TF-IDF + Ridge 기반 문항별 점수·토큰 예측 실험 |
 
 ## 비용 추정과 정책 설계
 
@@ -37,7 +38,7 @@ SPDX-License-Identifier: Apache-2.0
 | `calibrate.py` | 모델별 실제/예측 총비용 배율 산출 및 log-cost head 보정 |
 | `policy.py`, `policy2.py` | 예산 제약 하 배분 정책 시뮬레이션 |
 | `sim.py`, `think2.py` | 그룹 규칙 기반 배분 시뮬레이션 |
-| `shrink.py`, `sweep.sh`, `tune.sh` | 점수 head 스케일과 안전계수 탐색 |
+| `shrink.sh`, `sweep.sh`, `tune.sh` | 점수 head 스케일과 안전계수 탐색 |
 
 ## 교차검증 (안전계수 결정 근거)
 
