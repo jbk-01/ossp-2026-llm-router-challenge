@@ -1,3 +1,23 @@
+> ## 팀 제출본 — 뭘했음청년들 (접수번호 856)
+>
+> 2026년 오픈소스 개발자대회 SK텔레콤 지정과제 출품작입니다.
+> 프롬프트 내용만으로 세 LLM 후보 중 하나를 선택하는 비용 효율적 라우터로,
+> 비용 추정 편향을 실측 교정하고 교차검증으로 예산 여유를 결정했습니다.
+>
+> | 항목 | 값 |
+> | --- | --- |
+> | 5-폴드 교차검증 평균 | **0.6605** (예산 초과 0/5) |
+> | 공개 Dev 880문항 | 0.7056 (비율 1.062 / 1.696 / 2.910) |
+> | 참조 baseline 동일 조건 | 0.5316 (예산 초과 2/5) |
+>
+> - 재현 절차: [REPRODUCE.md](REPRODUCE.md)
+> - 설계 근거 분석: [analysis/](analysis/)
+> - 기술 제출 정보: [submission-ossp-skt.json](submission-ossp-skt.json)
+> - 시연 영상: https://youtu.be/BnA5bnaoBbY
+>
+> 아래는 과제 원본 README입니다.
+
+---
 <!--
 SPDX-FileCopyrightText: Copyright 2026 SK TELECOM CO., LTD.
 SPDX-License-Identifier: Apache-2.0
