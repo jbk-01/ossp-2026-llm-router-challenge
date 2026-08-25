@@ -1,6 +1,14 @@
 # SPDX-FileCopyrightText: Copyright 2026 뭘했음청년들
 # SPDX-License-Identifier: Apache-2.0
-"""Container entry point: bundled hash-regex router."""
+"""컨테이너 진입점 — 학습 계수를 내장한 hash-regex 라우터.
+
+평가 환경은 네트워크를 제공하지 않으므로 학습 계수(artifact.v1.json)를
+이미지에 내장하고 importlib.resources로 읽는다. 따라서 baselines의
+원본과 달리 --artifact 경로 인자를 받지 않는다.
+
+라우터는 모델을 호출하지 않고 문항마다 model_id 하나만 선택하며,
+선택에는 프롬프트 내용만 사용한다(문항 ID·입력 순서 미사용).
+"""
 from __future__ import annotations
 
 import argparse

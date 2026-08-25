@@ -45,6 +45,11 @@ DEFAULT_HASH_BINS = 256
 MIN_HASH_BINS = 16
 MAX_HASH_BINS = 16_384
 PREMIUM_AX31_FILL_SAFETY_RATIO = 0.65
+# 토큰화 대상 텍스트의 상한.
+# 공개 Train+Dev 전체 1,116만 자 중 장문 문맥 문항이 대부분을 차지하는데,
+# 8,000자로 제한하면 처리 대상이 22.8%로 줄어 실행 시간이 절반이 된다.
+# 문자 수 특징은 extract_features()가 절단 전 원본으로 계산하므로
+# 장문 문맥 판별 신호는 보존된다.
 MAX_FEATURE_CHARS = 8000
 _FNV_OFFSET = 14_695_981_039_346_656_037
 _FNV_PRIME = 1_099_511_628_211
