@@ -15,6 +15,15 @@
 > - 기술 제출 정보: [submission-ossp-skt.json](submission-ossp-skt.json)
 > - 시연 영상: https://youtu.be/BnA5bnaoBbY
 >
+> **팀 구성 및 역할**
+>
+> | 역할 | 담당 |
+> | --- | --- |
+> | 핵심 ML 모델링 | 예측기 설계 및 학습 파이프라인 |
+> | 데이터 분석 · 정책 설계 | EDA, 등급별 라우팅 정책, 예산 제약 로직, 실험 관리 |
+>
+> 향후 개선 방향과 확인된 한계는 [Issues](../../issues)에 정리했습니다.
+>
 > 아래는 과제 원본 README입니다.
 
 ---
