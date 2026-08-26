@@ -50,3 +50,12 @@ SPDX-License-Identifier: Apache-2.0
 | `final.sh` | 통합 학습 계수의 등급별 안전계수 스윕 |
 
 교차검증 결과는 저장소 루트 [REPRODUCE.md](../REPRODUCE.md)에 정리했습니다.
+
+
+## 실행 시 참고
+
+- 스크립트는 저장소 루트에서 실행합니다 (`python3 analysis/analyze.py` 형태).
+- `build/train.csv`, `build/dev.csv`가 먼저 생성되어 있어야 합니다
+  (`analysis/mkdev.py` 실행).
+- 교차검증 스크립트는 `cv.sh` → `cvrun.sh` → `cveval.sh` 순서로 실행합니다.
+- 학습에는 NumPy가 필요하며, 분석에는 pandas와 scikit-learn이 필요합니다.
