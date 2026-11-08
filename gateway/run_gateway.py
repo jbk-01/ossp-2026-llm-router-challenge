@@ -26,7 +26,7 @@ def messages_of(ep):
 def call(model_id, msgs):
     body = json.dumps({
         "model": MODEL_MAP[model_id], "messages": msgs, "stream": False,
-        "options": {"num_predict": MAX_TOKENS[model_id]},
+        "options": {"num_predict": MAX_TOKENS[model_id], "temperature": 0, "seed": 42},
     }).encode()
     req = urllib.request.Request(OLLAMA, body, {"Content-Type": "application/json"})
     t0 = time.monotonic()
